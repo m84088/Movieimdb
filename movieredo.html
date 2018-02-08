@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .item1 { grid-area: ads;}
+        .item3 { grid-area: movie; }
+        .item4 { grid-area: menu; }
+        .item5 { grid-area: molst; }
+        .item6 { grid-area: lost; }
+        .item7 {grid-area: win}
+
+        .grid-container {
+            display: grid;
+            grid-template-areas: 'ads ads ads ads ads ads ads'
+                                 'movie movie movie movie movie movie movie'
+                                 'menu menu menu menu menu menu menu'
+                                 'molst molst molst molst molst molst molst'
+                                 'lost lost lost lost lost lost lost'
+                                 'win win win win win win win';
+            grid-gap: 0px;
+            background-color: white;
+            padding: 1px;
+            text-align: center;
+
+
+        }
+        .grid-container > div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+        div.item3 {
+            font-family: "Snell Roundhand";
+            color: red;
+            font-size: 70px;
+        }
+        div.item4 {
+            font-family: "Snell Roundhand";
+            color: red;
+            font-size: 60px;
+        }
+        div.item5 button {
+            font-size: 40px;
+            font-family: "Snell Roundhand";
+            color: green;
+            padding: 20px 32px;
+        }
+        .item6 {
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<nav>
+  <!--  <a href="more.html">Home</a>
+   <!-- <a href="gallery.html">Gallery</a> -->
+    <link rel="stylesheet" href="movieredo.css"/>
+</nav>
+<body>
+
+
+<div class="grid-container">
+        <div class="item1">
+            <img src="http://sobadsogood.com/uploads/media/2015/07/05/Funny-Ads-For-Highly-Illegal-Drugs-That-Used-To-Be-Medicine.jpg"
+            style="width: 400px; 100px"/a>
+        </div>
+        <div class="item3"><strong>The Best Site to Look For B Grade Movies</strong></div>
+        <div class="item4">Please Select one:</div>
+    <div class="item5">
+        <button type="button" onclick="alert('there is data just dont wanna')"> Scary</button>
+        <button type="button" onclick="alert('There aint no Data')"> Funny</button>
+        <button type="button" onclick="alert('What you lookin at?')"> Drama</button>
+        <button type="button" onclick="alert('Click the next button')"> Spacey Stuff</button>
+        <button type="button" onclick="alert('Be gentle it is my first time')"> I guess this is ok</button>
+    </div>
+
+    <div class="item6"><a href="https://media.giphy.com/media/Wts4hSTw9ke8E/giphy.gif"
+                          onclick="alert('I TOLD YOU NOT TO!! return arrow after')">Do not click!!!!</a></div>
+    <div class="item7"><a href="http://static.tvtropes.org/pmwiki/pub/images/7149084_3_5823.jpg">it's a real movie, return arrow please after.</a> </div>
+
+
+</div>
+</div>
+</body>
+</html>
